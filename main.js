@@ -18,11 +18,23 @@ function store(){
     // checking for unique Email Id
     var users = getUsers() ;
     var flagEmail=0 ;
+    let validEmail=0 ;
+    
+    if( email.value.match( /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ ) ) {
+        validEmail=0 ;
+    } else {
+        validEmail=1 ;
+    }
+    
     for(var i=0;i<users.length;i++)
     { if( email.value == users[i]["email"] )
          { flagEmail=1 ; break ; }
     }
-    if(flagEmail==1) {
+    
+    if(validEmail==1) {
+        alert('Please Enter the valid Email Id') ;
+    }
+    else if(flagEmail==1) {
         alert('Please Enter the Unique Email Id') ; 
     }else if(email.value.length == 0){
         alert('Please fill in email');
