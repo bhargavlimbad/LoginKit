@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Users List</title>
+    
+    <style>
+      #myInput {
+        /* background-image: url('logo.png');
+        background-position: 0.1px 0.1px;
+        background-repeat: no-repeat; */
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+    </style>
+      
+
+
+  </head>
+  <body>
+      
+      <div class="container">
+        <br>  
+        <h2>List Of Users</h2>
+        
+        <br> <hr> 
+        
+        <p><strong>Click the headers to sort the table.</strong></p>
+        <p>The first time you click, the sorting direction is ascending (A to Z).</p>
+        <p>Click again, and the sorting direction will be descending (Z to A):</p>
+        
+        <br> <hr>
+        
+        <input class="myInput" id="myInput" type="text" placeholder="Search.."> <br>
+        <table class="table" id="tableList">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col" onclick="sortTable(0)">Sr No.</th>
+                <th scope="col" onclick="sortTable(1)">Name</th>
+                <th scope="col" onclick="sortTable(2)">Email</th>
+                <th scope="col" onclick="sortTable(3)">Gender</th>
+                <th scope="col" onclick="sortTable(4)">DOB</th>
+                <th scope="col" onclick="sortTable(5)">Contact</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+          </table> 
+
+
+      </div>
+
+
+
+    <script src="userslist.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
