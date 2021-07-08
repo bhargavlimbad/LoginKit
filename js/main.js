@@ -26,11 +26,11 @@ function store(){
         validEmail=1 ;
     }
     
-
     for(var i=0;i<users.length;i++)
     { if( email.value == users[i]["email"] )
          { flagEmail=1 ; break ; }
     }
+    
     if(validEmail==1) {
         alert('Please Enter the valid Email Id') ;
     }
